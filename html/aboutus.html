@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Travel Agency - About Us</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../javascript/script.js" async ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "xIlnHUZW9NmPYt6g-",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="../img/logo_Ubuntu.png" alt="Ubuntu Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="blog&reviews.html">Blog & Reviews</a>
+            <a href="aboutus.html" class="active">About Us</a>
+        </nav>
+        <div class="header-actions">
+            <button class="btn login">Log In</button>
+            <button class="btn signup">Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <body>
+            <div class="container">
+                <img src="../img/Victor.png" alt="Victor" class="photo" />
+            <div class="intro">
+            <h1 style="text-align: center;">Welcome to Ubuntu Travel</h1>
+            <p style="text-align: center;">
+                Ubuntu Travel was founded on a deep love for South Africa’s landscapes, cultures, and people.
+                Our mission is simple: to offer travelers from all over the world a chance to experience
+                South Africa through authentic, curated adventures that respect the spirit of Ubuntu — "I am because we are".
+            </p>
+            </div>
+                <img src="../img/Lina.png" alt="Lina" class="photo" />
+            </div>
+
+            <section class="founders">
+            <div class="founder">
+                <h2>Victor</h2>
+                <p>
+                    Victor is a tech-savvy adventurer who believes travel should be both immersive and seamless.
+                    With a background in software engineering and a love for storytelling, he’s the mastermind
+                    behind our smooth booking experiences and engaging digital tools. His favorite spot?
+                    Anywhere with a sunset view over the ocean.
+                </p>
+            </div>
+            <div class="founder">
+                <h2>Lina</h2>
+                <p>
+                    Lina is a cultural explorer at heart. With a background in event planning and tourism,
+                    she brings a deep sensitivity to the experiences that truly connect people to places.
+                    Her passion for South African art, music, and local cuisine ensures every journey is
+                    unforgettable and personal.
+                </p>
+            </div>
+            </section>
+            <section class="contact-form">
+                <h2>Contact Us !</h2>
+                <form id="contact-form">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required />
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+                <button type="submit">Send</button>
+                </form>
+                <script type="text/javascript" src="../javascript/form.js"></script>
+                <div id="notification" style="margin-top: 15px; font-family: Arial, sans-serif;"></div>
+                <script type="text/javascript" src="../javascript/form.js"></script>
+            </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Ubuntu Travel. All rights reserved.
+    </footer>
+</body>
+</html>

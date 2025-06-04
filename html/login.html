@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Ubuntu Travel</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../javascript/script.js"></script>
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-title">Log In</div>
+        <form class="login-form" id="loginForm">
+            <div>
+                <label for="email">E-mail Address</label>
+                <input type="mail" id="email" placeholder="E-mail" required autocomplete="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required autocomplete="current-password">
+            </div>
+            <button type="submit" class="login-btn">Log In</button>
+            <a href="https://www.wikihow.com/Remember-a-Forgotten-Password"  target="_blank" class="forgot-link">Forgot password?</a>
+            <button type="button" class="signup-link-btn" onclick="window.location.href='signup.html'">Don't have an account? Sign Up Here</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            connect();
+        });
+    </script>
+</body>
+</html>

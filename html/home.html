@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Travel Agency - Home</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../javascript/script.js" async ></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="../img/logo_Ubuntu.png" alt="Ubuntu Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="blog&reviews.html">Blog & Reviews</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+        <div class="header-actions">
+            <button class="btn login">Log In</button>
+            <button class="btn signup">Sign Up</button>
+        </div>
+    </header>
+
+    <div class="background-slider">
+        <img src="../img/img1.avif" alt="South Africa 1" class="slider-img active">
+        <img src="../img/img2.jpg" alt="South Africa 2" class="slider-img">
+        <img src="../img/img3.jpg" alt="South Africa 3" class="slider-img">
+    </div>
+
+
+
+
+    <section class="trip-search">
+        <form class="search-form" autocomplete="off">
+            <div class="form-group">
+                <label for="departure-date">Departure Date</label>
+                <input type="date" id="departure-date" name="departure-date" required>
+            </div>
+            <div class="form-group">
+                <label for="leaving-date">Leaving Date</label>
+                <input type="date" id="leaving-date" name="leaving-date" required>
+            </div>
+            <div class="form-group">
+                <label for="who-select">Who</label>
+                <div class="who-dropdown" id="who-dropdown">
+                    <button type="button" class="who-select-btn" id="who-select-btn">
+                        Select
+                    </button>
+                    <div class="who-dropdown-content" id="who-dropdown-content">
+                        <div class="who-row">
+                            <span>Adults</span>
+                            <button type="button" class="who-minus" data-type="adults">-</button>
+                            <span class="who-count" id="adults-count">1</span>
+                            <button type="button" class="who-plus" data-type="adults">+</button>
+                        </div>
+                        <div class="who-row">
+                            <span>Children</span>
+                            <button type="button" class="who-minus" data-type="children">-</button>
+                            <span class="who-count" id="children-count">0</span>
+                            <button type="button" class="who-plus" data-type="children">+</button>
+                        </div>
+                        <div class="who-row">
+                            <span>Infants</span>
+                            <button type="button" class="who-minus" data-type="infants">-</button>
+                            <span class="who-count" id="infants-count">0</span>
+                            <button type="button" class="who-plus" data-type="infants">+</button>
+                        </div>
+                        <div class="who-row">
+                            <span>Pets</span>
+                            <button type="button" class="who-minus" data-type="pets">-</button>
+                            <span class="who-count" id="pets-count">0</span>
+                            <button type="button" class="who-plus" data-type="pets">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="preferences">Preferences</label>
+                <div class="preferences-dropdown" id="preferences-dropdown">
+                    <button type="button" class="preferences-select-btn" id="preferences-select-btn">
+                        Select Preferences
+                    </button>
+                    <div class="preferences-dropdown-content" id="preferences-dropdown-content">
+                        <label><input type="checkbox" name="prefs" value="all" id="select-all"> Select All</label>
+                        <label><input type="checkbox" name="prefs" value="hikes" class="pref-option"> Hikes</label>
+                        <label><input type="checkbox" name="prefs" value="whale-watching" class="pref-option"> Whale Watching</label>
+                        <label><input type="checkbox" name="prefs" value="beach" class="pref-option"> Beach</label>
+                        <label><input type="checkbox" name="prefs" value="cities" class="pref-option"> Visiting Cities</label>
+                        <label><input type="checkbox" name="prefs" value="nature" class="pref-option"> Nature</label>
+                        <label><input type="checkbox" name="prefs" value="safari" class="pref-option"> Safari</label>
+                        <label><input type="checkbox" name="prefs" value="wine-tasting" class="pref-option"> Wine Tasting</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn search-btn">Search</button>
+        </form>
+    </section>
+
+
+
+    <section class="features-section">
+        <div class="features-container">
+            <div class="features-left">
+                <h2 class="features-title"><span>Leave</span><br><b>it to us!</b></h2>
+                <p class="features-desc">
+                    At Ubuntu Travel, we’re here to make your South African adventure smooth, exciting, and meaningful. Our team handles every detail — from your first booking to your final sunset selfie — with love and local insight. You dream it, we make it happen.
+                </p>
+            </div>
+            <div class="features-right">
+                <div class="feature-card">
+                    <img src="../img/feature1.jpeg" alt="Customized Tours">
+                    <div class="feature-card-title">Customized Tours</div>
+                    <div class="feature-card-desc">
+                        No cookie-cutter trips here! Whether you're chasing waterfalls, vibing with wildlife, or exploring vibrant cities, we craft every tour to match your style, pace, and curiosity. It’s your trip — just the way you want it.                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="../img/feature2.jpeg" alt="Hassle-free Arrangements">
+                    <div class="feature-card-title">Hassle-free Arrangements</div>
+                    <div class="feature-card-desc">
+                        Say goodbye to travel stress. From airport pickups to daily plans, we organize everything with care. You just show up and soak it all in — the beauty, the culture, the vibe. We’ve got the rest.
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="../img/feature3.jpeg" alt="Flexible Rebooking Policy">
+                    <div class="feature-card-title">Flexible Rebooking Policy</div>
+                    <div class="feature-card-desc">
+                        Plans change. Life happens. That’s why we offer flexible rebooking options to give you peace of mind. Move your dates, switch up your itinerary — we’re here to help you travel on your terms.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+
+    <section class="reviews-marquee-section">
+        <div class="reviews-marquee-container">
+            <div class="reviews-marquee-track">
+                <div class="review-card">
+                    <img src="../img/profile1.jpeg" alt="User1" class="review-profile">
+                    <div class="review-info">
+                        <div class="review-username">Lina_M</div>
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-comment">Absolutely magical! Ubuntu Travel made my dream trip come true. Highly recommend!</div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="../img/IMG_0523.JPEG" alt="User2" class="review-profile">
+                    <div class="review-info">
+                        <div class="review-username">VictorV</div>
+                        <div class="review-stars">★★★★☆</div>
+                        <div class="review-comment">Great service and beautiful locations. Will book again!</div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="../img/profile2.jpeg" alt="User3" class="review-profile">
+                    <div class="review-info">
+                        <div class="review-username">SarahJ</div>
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-comment">The guides were so friendly and knowledgeable. Loved every moment!</div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="../img/profile4.jpg" alt="User4" class="review-profile">
+                    <div class="review-info">
+                        <div class="review-username">MikeT</div>
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-comment">Best vacation ever! The safari was unforgettable.</div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="../img/profile5.jpeg" alt="User5" class="review-profile">
+                    <div class="review-info">
+                        <div class="review-username">AnnaB</div>
+                        <div class="review-stars">★★★★☆</div>
+                        <div class="review-comment">Loved the flexibility and attention to detail. Thank you Ubuntu!</div>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <img src="../img/profile1.jpeg" alt="User1" class="review-profile">
+                    <div class="review-info">
+                        <div class="review-username">Lina_M</div>
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-comment">Absolutely magical! Ubuntu Travel made my dream trip come true. Highly recommend!</div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <img src="../img/profile2.jpg" alt="User2" class="review-profile">
+                    <div class="review-info">
+                        <div class="review-username">VictorV</div>
+                        <div class="review-stars">★★★★☆</div>
+                        <div class="review-comment">Great service and beautiful locations. Will book again!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 Ubuntu Travel. All rights reserved.
+    </footer>
+</body>
+</html>

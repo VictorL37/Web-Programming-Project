@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Ubuntu Travel</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../javascript/script.js" async ></script>
+</head>
+<body class="signup-page">
+    <div class="signup-container">
+        <div class="signup-title">Sign Up</div>
+        <form class="signup-form" id="signupForm">
+            <div>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required autocomplete="firstname">
+            </div>
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required autocomplete="lastname">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div>
+                <label for="birthdate">Birthdate</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required autocomplete="username">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required autocomplete="new-password">
+            </div>
+            <div>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required autocomplete="new-password">
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <a href="login.html" class="login-link">Already have an account? Log In</a>
+        </form>
+    </div>
+    <script src="../javascript/script.js"></script>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            handleSubmit(e);
+        });
+    </script>
+</body>
+</html>
